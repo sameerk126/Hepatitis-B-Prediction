@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Press+Start+2P&family=Roboto+Mono:ital@0;1&family=Tajawal:wght@400;700&family=Trispace:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Hepatitis B Prediction Using Machine Learning </h2>
+    <div class="main">
+        <form action="{{ url_for('predict')}}" method="post">
+            <!-- Age	Sex	ALB	ALP	ALT	AST	BIL	CHE	CHOL	CREA	GGT	PROT -->
+            <input type="number" name="age" placeholder="AGE" id="wide"><br>
+
+            <div class="sex">SEX :  <br>male<input type="radio" value="1" name="sex" id="sex">
+            female<input type="radio" name="sex" id="sex" value="0" placeholder="sex" ></div>
+            <input type="number" name="alb" placeholder="Albumin  (0-100)" id="wide">
+            <input type="number" name="alp" placeholder="Alkaline Phosphatase (0-200)" id="wide">
+            <input type="number" name="alt" placeholder="Alanine Aminotransferase (0-250)" id="wide">
+            <input type="number" name="ast" placeholder="Aspartate Aminotransferase (0-250)" id="wide">
+            <input type="number" name="bil" placeholder="Bilirubin (0-250)" id="wide">
+            <input type="number" name="che" placeholder="Cholinesterase (0-20)" id="wide">
+            <input type="number" name="chol" placeholder="Cholesterol (0-10)" id="wide">
+            <input type="number" name="crea" placeholder="Creatinine (0-200)" id="wide">
+            <input type="number" name="ggt" placeholder="Gamma-Glutamyl Transferase (0-300)" id="wide">
+            <input type="number" name="prot" placeholder="Protein (40-100)" id="wide"><br>
+            
+            <button type="submit" id="predict">Predict</button>
+            <button type="reset" id="reset">Reset</button> 
+            
+        </form>
+    </div>
+    <h3>
+   
+       
+       {{prediction_text}}</h3>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    background-image: url(images/background1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-position: center  ; */
+    /* background-size: auto; */
+
+    /* background-h; */
+    overflow: hidden;
+}
+h2{
+    position: relative;
+    right: -40%;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.main{
+    width: 40%;
+    /* height: 100%; */
+    border: 1px solid #c01400;
+    position: absolute;
+    right: 10%;
+    /* height: 100%; */
+    /* background: rgb(63,94,251); */
+    height: 70%;
+    background-color:rgba(146, 212, 241,0.5);
+    padding-top: 10px;
+    /* opacity: 30%; */
+    border-radius: 10px;
+    
+
+
+}
+#wide{
+    width: 80%;
+    height: 25px;
+    position: relative;
+    right: -10%;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+#alb{
+    width: 100%;
+}
+.sex{
+     position: relative;
+   left: 10%;
+}
+.main button{
+    height: 30px;
+    width: 100px;
+}
+
+#predict{
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+    /* top: 10%; */
+    border-radius: 10px;
+    border: none;
+    background-color:      #c01400;
+    color: wheat;
+}
+#reset{
+    position: relative;
+    margin-top: 10px;
+    left: 57%;
+    border-radius: 10px;
+    border: none;
+    background-color:      #c01400;
+    color: wheat;
+
+
+}
+#predict:hover, #reset:hover{
+    background-color:#29abe2;
+    color:    black;
+    border:1px solid #c01400 ;
+}
+h3{
+
+    position: relative;
+    left: 60%;
+    margin-top: 34%;
+    
+}
